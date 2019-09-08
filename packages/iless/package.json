@@ -2,7 +2,7 @@
   "name": "szy-tool",
   "version": "0.0.1",
   "description": "js tools",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "test": "mocha --reporter spec",
