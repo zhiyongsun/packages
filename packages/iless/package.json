@@ -2,9 +2,15 @@
   "name": "szy-tool",
   "version": "0.0.1",
   "description": "js tools",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "father build",
+    "devDoc": "father doc dev",
+    "docDeploy": "father doc deploy",
+    "docBuild": "father doc build",
+    "testFather": "father test",
+    "cov": "father test --coverage",
+    "buildorigin": "tsc",
     "test": "mocha --reporter spec",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec"
   },
@@ -30,6 +36,7 @@
     "typescript": "^3.6.2"
   },
   "dependencies": {
+    "father": "^2.23.2",
     "szy-tools": "0.0.1"
   }
 }
