@@ -2,7 +2,7 @@
   "name": "szy-tool",
   "version": "0.0.1",
   "description": "js tools",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "father build",
     "devDoc": "father doc dev",
@@ -36,7 +36,10 @@
     "typescript": "^3.6.2"
   },
   "dependencies": {
+    "anima-querystring": "^2.0.0",
     "father": "^2.23.2",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
     "szy-tools": "0.0.1"
   }
 }

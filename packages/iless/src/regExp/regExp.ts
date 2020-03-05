@@ -16,3 +16,9 @@ const re = /^\$/;
  * @type {RegExp}
  */
 const re2 = /t$/;
+
+
+export default {
+  re,
+  re2,
+}

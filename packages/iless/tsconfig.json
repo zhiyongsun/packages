@@ -3,9 +3,15 @@
     "target": "es5",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "./lib",
     "strict": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.promise"
+    ]
   },
   "exclude": ["node_modules"]
 }
