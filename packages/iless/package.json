@@ -37,9 +37,11 @@
   },
   "dependencies": {
     "anima-querystring": "^2.0.0",
+    "debug": "^4.1.1",
     "father": "^2.23.2",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "szy-tools": "0.0.1"
+    "szy-tools": "0.0.1",
+    "versioning": "^1.1.0"
   }
 }

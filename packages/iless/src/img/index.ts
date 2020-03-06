@@ -1,9 +1,13 @@
+// @ts-ignore
+import debug from 'debug';
+const log = debug('img:preloadImg');
 
 /**
  * 预加载图片
  * @param url
  */
 export const preloadImg = (url?: string) => {
+  log(url);
   if(!url) return;
   const imgTemp = new Image();
   imgTemp.src = url;
