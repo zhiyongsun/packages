@@ -1,7 +1,7 @@
 {
-  "name": "szy-tool",
+  "name": "iless",
   "version": "0.0.1",
-  "description": "js tools",
+  "description": "js tools for less code",
   "main": "lib/index.js",
   "scripts": {
     "build": "father build",
@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/zhiyongsun/sculpture/issues"
   },
-  "homepage": "https://github.com/zhiyongsun/sculpture#readme",
+  "homepage": "https://github.com/zhiyongsun/iless#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.0.6",

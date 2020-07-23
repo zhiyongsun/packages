@@ -6,7 +6,7 @@
  * @param rest
  * @returns {Number}
  */
-export const getStringLength = (rest: string) => [...rest].length;
+export const getStringLength = (str: string) => [...str].length;
 
 export default {
   getStringLength
