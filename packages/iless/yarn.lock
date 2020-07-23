@@ -3329,6 +3329,33 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
+anima-querystring@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/anima-querystring/-/anima-querystring-2.0.0.tgz#e4d9d134e763b1203bc66cd107daef9cb286db4c"
+  integrity sha1-5NnRNOdjsSA7xmzRB9rvnLKG20w=
+  dependencies:
+    anima-yocto-lite "~2.0.0"
+
+anima-yocto-core@^2.0.0:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/anima-yocto-core/-/anima-yocto-core-2.0.4.tgz#fa6f828d5539857ac36a1b1c056b7b7871b5b46c"
+  integrity sha512-twbSn5gerCFCtfINzD6hQkG2EDHQeZ4jtDzkQ8QDmXEUrulzwz0PwpMJUaVvUr5LYOrXmm2oN1qE2CK2TILdRQ==
+
+anima-yocto-event@^2.0.0:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/anima-yocto-event/-/anima-yocto-event-2.0.5.tgz#8139cba67c5faeeaf7c601d1941e85941956cfe1"
+  integrity sha512-J0Gkla/27ai8q1WoueDe7yVzfnLfpQ7xvYlgTtpY1ioulyqWcmekunTaXyjTsd+2kfEN4ANEmEKEhbzL99ftVA==
+  dependencies:
+    anima-yocto-core "^2.0.0"
+
+anima-yocto-lite@~2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/anima-yocto-lite/-/anima-yocto-lite-2.0.2.tgz#47c4c939903c376db2df8daf1208c37cedf50688"
+  integrity sha1-R8TJOZA8N22y342vEgjDfO31Bog=
+  dependencies:
+    anima-yocto-core "^2.0.0"
+    anima-yocto-event "^2.0.0"
+
 ansi-align@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-align/-/ansi-align-2.0.0.tgz#c36aeccba563b89ceb556f3690f0b1d9e3547f7f"
@@ -9723,9 +9750,9 @@ handle-thing@^2.0.0:
   integrity sha512-d4sze1JNC454Wdo2fkuyzCr6aHcbL6PGGuFAz0Li/NcOm1tCHGnWDRmJP85dh9IhQErTc2svWFEX5xHIOo//kQ==
 
 handlebars@^4.0.1, handlebars@^4.1.2:
-  version "4.4.5"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.4.5.tgz#1b1f94f9bfe7379adda86a8b73fb570265a0dddd"
-  integrity sha512-0Ce31oWVB7YidkaTq33ZxEbN+UDxMMgThvCe8ptgQViymL5DPis9uLdTA13MiRPhgvqyxIegugrP97iK3JeBHg==
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.3.tgz#8ece2797826886cf8082d1726ff21d2a022550ee"
+  integrity sha512-SRGwSYuNfx8DwHD/6InAPzD6RgeruWLT+B8e8a7gGs8FWgHzlExpTFMEq2IA6QpAfOClpKHy6+8IqTjeBCu6Kg==
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
@@ -12313,9 +12340,9 @@ lodash@4.17.13:
   integrity sha512-vm3/XWXfWtRua0FkUyEHBZy8kCPjErNBT9fJx8Zvs+U6zjqPbTUOpkaoum3O5uiA8sm+yNMHXfYkTUHFoMxFNA==
 
 "lodash@>=3.5 <5", lodash@^4.0.1, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.16.5, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 lodash@^3.3.1:
   version "3.10.1"
@@ -18759,7 +18786,15 @@ uglify-js@^2.8.22:
   optionalDependencies:
     uglify-to-browserify "~1.0.0"
 
-uglify-js@^3.1.4, uglify-js@^3.5.1:
+uglify-js@^3.1.4:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.8.0.tgz#f3541ae97b2f048d7e7e3aa4f39fd8a1f5d7a805"
+  integrity sha512-ugNSTT8ierCsDHso2jkBHXYrU8Y5/fY2ZUprfrJUiD7YpuFvV4jODLFmb3h4btQjqr5Nh4TX4XtgDfCU1WdioQ==
+  dependencies:
+    commander "~2.20.3"
+    source-map "~0.6.1"
+
+uglify-js@^3.5.1:
   version "3.6.3"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.6.3.tgz#1351533bbe22cc698f012589ed6bd4cbd971bff8"
   integrity sha512-KfQUgOqTkLp2aZxrMbCuKCDGW9slFYu2A23A36Gs7sGzTLcRBDORdOi5E21KWHFIfkY8kzgi/Pr1cXCh0yIp5g==
@@ -19327,6 +19362,11 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+versioning@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/versioning/-/versioning-1.1.0.tgz#61cc62de95a0b4cef35fc34104c204940e8e1dba"
+  integrity sha1-Ycxi3pWgtM7zX8NBBMIElA6OHbo=
 
 vfile-location@^2.0.0:
   version "2.0.5"
