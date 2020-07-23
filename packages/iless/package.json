@@ -2,18 +2,14 @@
   "name": "iless",
   "version": "0.0.1",
   "description": "js tools for less code",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "father build",
-    "devDoc": "father doc dev",
-    "docDeploy": "father doc deploy",
-    "docBuild": "father doc build",
-    "testFather": "father test",
-    "cov": "father test --coverage",
-    "buildorigin": "tsc",
-    "test": "mocha --reporter spec",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec"
+    "build": "tsc",
+    "pub": "tnpm run tsc && tnpm publish"
   },
+  "files": [
+    "lib/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhiyongsun/sculpture.git"
@@ -33,15 +29,13 @@
     "coveralls": "^3.0.6",
     "istanbul": "^0.4.5",
     "mocha": "^6.2.0",
-    "typescript": "^3.6.2"
+    "typescript": "^3.6.3"
   },
   "dependencies": {
     "anima-querystring": "^2.0.0",
     "debug": "^4.1.1",
-    "father": "^2.23.2",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "szy-tools": "0.0.1",
     "versioning": "^1.1.0"
   }
 }

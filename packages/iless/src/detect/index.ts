@@ -3,15 +3,15 @@ if (typeof document.hidden !== "undefined") {
   hidden = "hidden";
   visibilityChange = "visibilitychange";
   state = "visibilityState";
-} else if (typeof document.mozHidden !== "undefined") {
+} else if (typeof (document as any).mozHidden !== "undefined") {
   hidden = "mozHidden";
   visibilityChange = "mozvisibilitychange";
   state = "mozVisibilityState";
-} else if (typeof document.msHidden !== "undefined") {
+} else if (typeof (document as any).msHidden !== "undefined") {
   hidden = "msHidden";
   visibilityChange = "msvisibilitychange";
   state = "msVisibilityState";
-} else if (typeof document.webkitHidden !== "undefined") {
+} else if (typeof (document as any).webkitHidden !== "undefined") {
   hidden = "webkitHidden";
   visibilityChange = "webkitvisibilitychange";
   state = "webkitVisibilityState";
@@ -20,7 +20,7 @@ if (typeof document.hidden !== "undefined") {
 export const pageVisible = {
   hidden,
   visibilityChange
-}
+};
 
 
 export default {
