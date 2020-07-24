@@ -1,11 +1,11 @@
 {
-  "name": "itool",
+  "name": "iless",
   "version": "0.0.1",
   "description": "js tools for less code",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "pub": "npm run build && npm publish"
+    "pub": "rm -rf lib && npm run build && npm publish"
   },
   "files": [
     "lib/*"
