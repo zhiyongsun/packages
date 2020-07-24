@@ -8,11 +8,13 @@
     "pub": "rm -rf lib && npm run build && npm publish"
   },
   "files": [
-    "lib/*"
+    "lib/*",
+    "index.js",
+    "index.d.ts"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhiyongsun/sculpture.git"
+    "url": "git+https://github.com/zhiyongsun/iless.git"
   },
   "keywords": [
     "js",
