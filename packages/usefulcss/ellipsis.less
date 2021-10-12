@@ -1,14 +1,18 @@
-.one-line {
+.one-line-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.two-line {
+.multi-line-ellipsis(@lineNumber: 2) {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   /*! autoprefixer: off */
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: @lineNumber;
+}
+
+.two-line-ellipsis {
+  .multi-line-ellipsis();
 }
