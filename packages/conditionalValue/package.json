@@ -1,0 +1,15 @@
+{
+  "name": "conditionalvalue",
+  "version": "1.0.0",
+  "description": "conditional value",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "versioning": "^1.1.2"
+  }
+}
