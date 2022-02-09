@@ -6,7 +6,7 @@ interface Params {
   code?: string;
 }
 
-async function lessContainer(params: Params) {
+async function vmContainer(params: Params) {
   const {context= {
   }, codeFilePath, code} = params || {};
   let codeResult = code;
